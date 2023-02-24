@@ -3,6 +3,7 @@
   --border: #63d1ee;
   --black: #02151e;
 }
+
 *,
 *::after,
 *::before {
@@ -11,22 +12,29 @@
   box-sizing: border-box;
   line-height: 1;
 }
-a{
+
+a {
   color: var(--white);
   text-decoration: none;
 }
 
-.btn:hover,.btn:focus,.btn:active, 
+.btn:hover,
+.btn:focus,
+.btn:active,
 .btn:active:focus:not(:disabled):not(.disabled),
-.btn:focus, .btn:active, .btn:hover{
+.btn:focus,
+.btn:active,
+.btn:hover {
   border: 1px solid var(--border);
   color: var(--white);
   background-color: var(--border);
 }
+
 body {
   background-color: var(--white);
   box-sizing: inherit;
 }
+
 header {
   padding: 1rem 0;
   background: url("../images/exiting-the-void.jpg");
@@ -34,28 +42,34 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .logo img {
   height: 50px;
   width: 50px;
   object-fit: cover;
 }
+
 .logo h1 {
   color: var(--white);
   text-transform: uppercase;
 }
+
 nav {
   border-bottom: 1px solid var(--border);
   padding-bottom: 1rem;
 }
+
 .nav_links {
   list-style: none;
   gap: 3rem;
 }
+
 .nav_links a {
   color: var(--white);
   text-decoration: none;
   font-size: 20px;
 }
+
 .active {
   display: flex !important;
   flex-direction: column;
@@ -72,18 +86,22 @@ nav {
 header .section {
   height: 90vh;
 }
+
 .btn-cta {
   border: 1px solid var(--border);
   color: var(--white);
 }
+
 .section h1 {
   color: var(--white);
   text-transform: uppercase;
   font-size: 4rem;
 }
+
 .imp-text {
   color: var(--border);
 }
+
 .landing-btn {
   color: var(--white);
   background-color: var(--border);
@@ -97,23 +115,29 @@ header .section {
   padding: 10px;
   transform: rotate(-45deg);
 }
+
 .intro {
   background-color: var(--white);
 }
+
 .bg {
   position: relative;
 }
+
 .intro h2 {
   color: #1e839a;
 }
+
 .intro p {
   color: #02151e;
 }
+
 .yt-emmbed iframe {
   aspect-ratio: 16/9;
   position: relative;
   z-index: 3;
 }
+
 .bg::after {
   content: "";
   position: absolute;
@@ -122,16 +146,19 @@ header .section {
   width: 100%;
   background-color: #0e4e5d;
 }
+
 .section-ongoing {
   padding-top: 5rem;
   min-height: 110vh;
   background-color: #0e4e5d;
   position: relative;
 }
+
 .section-ongoing .container {
   z-index: 20;
   position: relative;
 }
+
 .eclipse {
   position: absolute;
   border-radius: 50%;
@@ -139,6 +166,7 @@ header .section {
   border: 0.596135px solid #63d1ee;
   box-shadow: inset 0px 2.38454px 40.5372px #63d1ee;
 }
+
 .eclipse-1 {
   width: 57px;
   height: 57px;
@@ -146,6 +174,7 @@ header .section {
   top: 200px;
   box-shadow: inset 0px 1.37047px 23.298px #63d1ee;
 }
+
 .eclipse-2 {
   width: 98px;
   height: 98px;
@@ -153,6 +182,7 @@ header .section {
   top: 300px;
   box-shadow: inset 0px 2.35625px 40.0562px #63d1ee;
 }
+
 .eclipse-3 {
   position: absolute;
   width: 99.18px;
@@ -160,6 +190,7 @@ header .section {
   right: 50.61px;
   top: 0.42px;
 }
+
 .eclipse-4 {
   position: absolute;
   left: initial;
@@ -167,6 +198,7 @@ header .section {
   top: 15%;
   border-radius: 50%;
 }
+
 .vector {
   position: absolute;
   width: 333px;
@@ -174,18 +206,22 @@ header .section {
   left: -20px;
   top: 450px;
 }
+
 .section-offer {
   background-color: #0e4e5d;
   padding-top: 5rem;
 }
-.btn-hire{
+
+.btn-hire {
   background-color: var(--border);
   color: var(--white);
   font-size: 2.5rem;
 }
-.btn-hire i{
+
+.btn-hire i {
   transform: rotate(-30deg);
 }
+
 .section-title {
   text-transform: uppercase;
   border-left: 10px solid var(--border);
@@ -194,6 +230,7 @@ header .section {
   padding-bottom: 2rem;
   color: var(--white);
 }
+
 .project-card {
   box-shadow: 0px 0px 36px -3.6000001430511475px #63d1ee inset;
   color: white;
@@ -206,45 +243,166 @@ header .section {
   place-items: center;
   text-align: center;
 }
+
 .offer-content {
   background: url("../images/woman-wearing-virtual-reality-simulator-removebg-preview.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position:bottom right;
+  background-position: bottom right;
   min-height: 60vh;
 }
+
 .section-webinar {
   background: linear-gradient(87.12deg, #1E839A 10.42%, #63D1EE 100%);
 
 }
-.section-webinar .project-card
-{
+
+.section-webinar .project-card {
   max-width: 400px;
   height: auto;
   aspect-ratio: 1/1;
 }
+
 .section-webinar .project-card:first-child {
   background: linear-gradient(180deg, #39a2bb 0%, rgba(57, 162, 187, 0) 100%);
   filter: drop-shadow(0px 0px 53px rgba(0, 0, 0, 0.2));
   border-radius: 60px;
 }
+
 .section-webinar .project-card:last-child {
   background: linear-gradient(180deg, #39a2bb 0%, rgba(57, 162, 187, 0) 100%);
   filter: drop-shadow(0px 0px 53px rgba(0, 0, 0, 0.2));
   border-radius: 60px;
 }
+
 footer {
   background: #1F849B;
   padding: 2rem;
 }
+
 footer ul {
   list-style: none;
 }
+
 footer ul li {
   margin: 1rem 0;
   color: white;
 }
-.socials span{
+
+.socials span {
   font-size: 2rem;
   margin: 0.5rem;
+}
+
+
+/*contect-form */
+
+.contect-form {
+  display: none;
+  position: relative;
+  max-width: 850px;
+  min-height: 650px;
+  margin: 0 auto;
+  background-color: var(--white);
+  z-index: 999;
+}
+
+.contect-form>h1 {
+  font-weight: 600;
+  transform: rotate(270deg);
+}
+
+.contect-form p {
+  font-weight: 500;
+}
+
+.contect-form .inner-form {
+  max-width: 600px;
+  max-height: fit-content;
+  background-color: #E7EBF1;
+  padding: 3rem !important;
+  border-radius: 20px;
+  margin-right: 2rem;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.textbox {
+  border-bottom: 2px solid var(--black);
+  font-size: 1rem;
+  color: var(--black);
+  margin-top: 1rem;
+}
+
+.form-label {
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  cursor: text;
+  pointer-events: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: all 200ms ease-in;
+}
+
+.textbox:focus~.form-label,
+.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label {
+  top: 0rem;
+  left: 0rem;
+  font-size: 0.75rem;
+}
+
+form button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn_close {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+}
+
+.btn_close i {
+  font-size: 2rem;
+}
+
+@media (max-width:425px) {
+  .contect-form>h1 {
+    display: none;
+  }
+
+  .contect-form .inner-form {
+    margin: 1rem;
+  }
+}
+
+.showContactForm {
+  display: flex;
+}
+.noScroll{
+  overflow: hidden;
 }

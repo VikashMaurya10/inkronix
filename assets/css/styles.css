@@ -11,14 +11,18 @@
   box-sizing: border-box;
   line-height: 1;
 }
-a{
+a {
   color: var(--white);
   text-decoration: none;
 }
 
-.btn:hover,.btn:focus,.btn:active, 
+.btn:hover,
+.btn:focus,
+.btn:active,
 .btn:active:focus:not(:disabled):not(.disabled),
-.btn:focus, .btn:active, .btn:hover{
+.btn:focus,
+.btn:active,
+.btn:hover {
   border: 1px solid var(--border);
   color: var(--white);
   background-color: var(--border);
@@ -33,6 +37,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 .logo img {
   height: 50px;
@@ -68,7 +73,81 @@ nav {
   top: 70px;
   border-radius: 12px;
 }
+.talk {
+  background: #070b1d;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-3 {
+  flex: 3;
+  background-color: white;
+}
 
+.form_title h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  transform: rotate(-90deg);
+}
+.form_content {
+  padding: 15px;
+  flex: 6;
+  width: 100%;
+  position: relative;
+}
+.close_icon_btn span {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+.close_icon_btn .fa-xmark {
+  margin-left: 12px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  background: #e7ebf1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(90% - 20px);
+  padding: 20px 50px;
+  border-radius: 1rem;
+}
+.show {
+  top: 0;
+}
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  resize: none;
+}
+.submit_btn {
+  color: white;
+  background: #070b1d;
+  border-radius: 33.2697px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
 header .section {
   height: 90vh;
 }
@@ -178,12 +257,12 @@ header .section {
   background-color: #0e4e5d;
   padding-top: 5rem;
 }
-.btn-hire{
+.btn-hire {
   background-color: var(--border);
   color: var(--white);
   font-size: 2.5rem;
 }
-.btn-hire i{
+.btn-hire i {
   transform: rotate(-30deg);
 }
 .section-title {
@@ -210,15 +289,13 @@ header .section {
   background: url("../images/woman-wearing-virtual-reality-simulator-removebg-preview.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position:bottom right;
+  background-position: bottom right;
   min-height: 60vh;
 }
 .section-webinar {
-  background: linear-gradient(87.12deg, #1E839A 10.42%, #63D1EE 100%);
-
+  background: linear-gradient(87.12deg, #1e839a 10.42%, #63d1ee 100%);
 }
-.section-webinar .project-card
-{
+.section-webinar .project-card {
   max-width: 400px;
   height: auto;
   aspect-ratio: 1/1;
@@ -234,7 +311,7 @@ header .section {
   border-radius: 60px;
 }
 footer {
-  background: #1F849B;
+  background: #1f849b;
   padding: 2rem;
 }
 footer ul {
@@ -244,7 +321,7 @@ footer ul li {
   margin: 1rem 0;
   color: white;
 }
-.socials span{
+.socials span {
   font-size: 2rem;
   margin: 0.5rem;
 }

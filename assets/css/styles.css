@@ -11,6 +11,10 @@
   box-sizing: border-box;
   line-height: 1;
 }
+a{
+  color: var(--white);
+  text-decoration: none;
+}
 
 .btn:hover,.btn:focus,.btn:active, 
 .btn:active:focus:not(:disabled):not(.disabled),
@@ -198,7 +202,6 @@ header .section {
   height: 300px;
   gap: 2rem;
   border-radius: 24px;
-  /* padding: 5rem; */
   display: grid;
   place-items: center;
   text-align: center;
@@ -213,6 +216,12 @@ header .section {
 .section-webinar {
   background: linear-gradient(87.12deg, #1E839A 10.42%, #63D1EE 100%);
 
+}
+.section-webinar .project-card
+{
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 .section-webinar .project-card:first-child {
   background: linear-gradient(180deg, #39a2bb 0%, rgba(57, 162, 187, 0) 100%);

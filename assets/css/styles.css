@@ -305,6 +305,7 @@ footer ul li {
   margin: 0 auto;
   background-color: var(--white);
   z-index: 999;
+  border-radius: 10px;
 }
 
 .contect-form>h1 {
@@ -403,6 +404,7 @@ form button {
 .showContactForm {
   display: flex;
 }
-.noScroll{
+
+.noScroll {
   overflow: hidden;
 }
